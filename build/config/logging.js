@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var getTimeStamp = function () {
     return new Date().toISOString();
 };
@@ -27,9 +27,9 @@ var debug = function (namespace, message, object) {
     else
         console.log("[" + getTimeStamp() + "] [DEBUG] [" + namespace + "] " + message);
 };
-exports["default"] = {
+exports.default = {
     info: info,
     warn: warn,
     error: error,
-    debug: debug
+    debug: debug,
 };
